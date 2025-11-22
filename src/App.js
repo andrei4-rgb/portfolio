@@ -105,7 +105,7 @@ function Contact() {
 function Footer() {
   return (
     <footer className="footer">
-      <p>© {new Date().getFullYear()} Your Name — Portfolio</p>
+      <p>© {new Date().getFullYear()} Artillero, Lexin Andrei G. — Portfolio</p>
     </footer>
   );
 }

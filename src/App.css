@@ -16,6 +16,7 @@ html, body, main {
   color: var(--text);
   font-family: 'Times New Roman', Times, serif;
   line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
 
@@ -29,6 +30,7 @@ a:hover {
 }
 
 .header {
+  --bg: linear-gradient(135deg, #0d1117, #161b22);
   background: var(--bg);
   border-bottom: 1px solid var(--muted);
   padding-bottom: 16px;
@@ -99,30 +101,61 @@ a:hover {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  padding-top: 12px;
 }
 
+
 .project-card {
-  background: var(--card);
+  background: rgba(22, 27, 34, 0.8);
   border: 1px solid var(--muted);
-  border-radius: 12px;
-  padding: 16px;
-  transition: transform 0.2s ease;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 220px;
 }
+
 .project-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
 }
+
 .project-card h3 {
-  margin: 0 0 6px;
+  margin: 0 0 8px;
+  font-size: 1.2rem;
 }
+
 .project-card .desc {
   color: var(--subtext);
   margin-bottom: 12px;
+  flex-grow: 1;
 }
+
+.project-card .tags {
+  margin-bottom: 12px;
+}
+
 .project-card .link {
+  align-self: flex-start;
   font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background-color: var(--muted);
+  transition: background-color 0.2s ease;
 }
+
+.project-card .link:hover {
+  background-color: var(--accent);
+  color: var(--bg);
+}
+
 
 .contact-list {
   list-style: none;
@@ -137,4 +170,15 @@ a:hover {
   padding: 16px 24px;
   text-align: center;
   color: var(--subtext);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
