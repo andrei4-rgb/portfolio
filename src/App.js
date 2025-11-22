@@ -26,7 +26,7 @@ function Header() {
         <a href="#contact" className="cta">Contact</a>
       </nav>
       <div className="hero">
-        <h1>Hi, I'm Your Name</h1>
+        <h1>Hi, Lexin Andrei G. Artillero</h1>
         <p>BSCS, third year — I build simple, functional web apps.</p>
         <a className="btn" href="#projects">View my work</a>
       </div>
@@ -39,13 +39,18 @@ function About() {
     <section id="about" className="section">
       <h2>About</h2>
       <p>
-        I’m a BSCS student focusing on web development and clean UI. I enjoy
-        building small projects with React, documenting my process, and
-        learning by doing. I keep my code readable and my features practical.
+        I’m a third-year BSCS student with a passion for building clean, functional web applications that prioritize user experience and accessibility. My journey into tech started with curiosity and a love for storytelling — now I channel that into crafting interfaces that feel intuitive and expressive.
+      </p>
+      <p>
+        I enjoy working with React, documenting my process clearly, and collaborating with others to solve creative and technical challenges. Whether I’m prototyping a game, designing a portfolio, or debugging a stubborn issue, I approach each task with patience, structure, and a desire to learn.
+      </p>
+      <p>
+        Outside of coding, I’m drawn to cinematic visual storytelling, slice-of-life aesthetics, and modular design systems. I believe that good software should feel human — and I aim to build projects that reflect that philosophy.
       </p>
     </section>
   );
 }
+
 
 function Skills() {
   const skills = ["HTML", "CSS", "JavaScript", "React", "Git", "Node.js"];
@@ -90,9 +95,8 @@ function Contact() {
     <section id="contact" className="section">
       <h2>Contact</h2>
       <ul className="contact-list">
-        <li><strong>Email:</strong> your.email@example.com</li>
-        <li><strong>GitHub:</strong> <a href="https://github.com/your-username" target="_blank" rel="noreferrer">your-username</a></li>
-        <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/your-username" target="_blank" rel="noreferrer">your-username</a></li>
+        <li><strong>Email:</strong> andreiartillero24@gmail.com</li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/andrei4-rgb" target="_blank" rel="noreferrer">andrei4-rgb</a></li>
       </ul>
     </section>
   );
