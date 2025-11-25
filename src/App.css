@@ -92,8 +92,8 @@ a:hover {
 }
 
 .avatar {
-  width: 140px;
-  height: 140px;
+  width: 150px;
+  height: 200px;
   border-radius: 50%;
   border: 3px solid var(--accent);
   box-shadow: 0 0 12px var(--accent);
