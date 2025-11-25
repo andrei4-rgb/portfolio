@@ -3,16 +3,16 @@ import { Link } from 'react-router-dom';
 
 const projects = [
   {
-    title: "Sample Project 1",
+    title: "Project 1",
     tech: ["React", "CSS"],
-    link: "https://github.com/andrei4-rgb/sample-project-1",
-    desc: "Simple React app demonstrating components and props."
+    link: "https://github.com/andrei4-rgb/forecast-app",
+    desc: "Simple React app with tensorflow.js"
   },
   {
-    title: "Sample Project 2",
-    tech: ["Node", "Express"],
-    link: "https://github.com/andrei4-rgb/sample-project-2",
-    desc: "Basic REST API with CRUD routes."
+    title: "Project 2 (ON-GOING)",
+    tech: ["Node", "React", "PHP"],
+    link: "https://github.com/andrei4-rgb/ccs112-shopeasy-sprint2",
+    desc: "Website."
   }
 ];
 
